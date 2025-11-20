@@ -10,16 +10,69 @@
     background-position: center;
     
 }
-        :root {
-            --bg-primary:#29caff;
-            --sekunder-bg-color: #000000;
-            --button-bg-color: #1d36c5;
-            --button-text-color: white;
-            --button-padding: 10px 20px;
-            --button-font-size: 16px;
-            --button-border-radius: 5px;
-            --button-hover-bg-color: #463af3;
-        }
+:root {
+    --warna-primer: #29caff;
+    --warna-primer2: #00a7de;
+    --warna-sekunder: black;
+    --warna-sekunder2: #F2F5F7;
+}
 img{
     width: 600px;
+}
+.navbar:hover{
+    cursor: pointer;
+}
+.Scrolling-active{
+    background-color: #29caff;
+    transition: 0.75s;
+}
+.Hero button{
+    background: var(--warna-primer);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.klien{
+    border-radius: 25px;
+    border: 5px solid var(--warna-primer2);
+    margin: 10px 20px;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 100px;
+    
+}
+.waktu{
+    border-radius: 25px;
+    border: 5px solid var(--warna-primer);
+    margin: 10px 20px;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 100px;
+    
+}
+.project{
+    border-radius: 25px;
+    border: 5px solid var(--warna-primer2);
+    margin: 10px 20px;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 100px;
+    
+}
+.klien:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.project:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.waktu:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+
+}
+.stat{
+    border: 5px solid var(--warna-primer2);
+    width: 100px;
 }
