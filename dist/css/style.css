@@ -1,10 +1,13 @@
 *{
     font-family: "Poppins", sans-serif;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 19px;
+}
+body{
+    background: var(--warna-sekunder);
 }
 .Hero{
-    background-image: linear-gradient(rgba(1, 1, 1,0.8)),url(../../asset/img/photo-1649416097303-ddf0c8a68fc3.jpg);
+    background-image: linear-gradient(rgba(1, 1, 1,0.5)),url(../../asset/img/photo-1649416097303-ddf0c8a68fc3.jpg);
     width: 100%;
     height:100vh;
     background-size: cover;
@@ -27,6 +30,8 @@ img{
 .Scrolling-active{
     background-color: var(--warna-primer);
     transition: 0.75s;
+    
+    color: white;
 }
 .Hero button{
     background: var(--warna-primer);
@@ -50,28 +55,37 @@ img{
     background: var(--warna-primer2);
     width: 189px;
     border-radius: 5px;
-    font-size: 15   px;
+    font-size: 15.22px;
 }
 .servis{
     background: var(--warna-sekunder2);
     border-radius: 10px;
 }
 .form{
-    background: var(--warna-primer);
+    background: var(--warna-sekunder);
     border-radius: 10px;
 }
 .box{
-    background: var(--warna-primer3);
+    background: var(--warna-primer);
     border-radius: 10px;
 }
 .contact{
     background: var(--warna-sekunder);
 }
 .isi{
-    background: var(--warna-primer2);
+    background: var(--warna-primer);
     border-radius: 10px;
     padding-top: 5px;
 }
 .lokasi iframe{
     border-radius: 10px;
+}
+p{
+    font-size: 18px;
+}
+textarea{
+    border-radius: 10px;
+} 
+.service,.about{
+    text-align: justify;
 }
