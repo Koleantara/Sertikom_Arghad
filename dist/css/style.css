@@ -7,7 +7,7 @@ body{
     background: var(--warna-sekunder);
 }
 .Hero{
-    background-image: linear-gradient(rgba(1, 1, 1,0.5)),url(../../asset/img/photo-1649416097303-ddf0c8a68fc3.jpg);
+    background-image: linear-gradient(rgba(1, 1, 1,0.7)),url(../../asset/img/photo-1649416097303-ddf0c8a68fc3.jpg);
     width: 100%;
     height:100vh;
     background-size: cover;
@@ -52,7 +52,7 @@ img{
     border-left:4px solid var(--warna-primer2);
 }
 .bloug{
-    background: var(--warna-primer2);
+    background: var(--warna-primer);
     width: 189px;
     border-radius: 5px;
     font-size: 15.22px;
@@ -61,7 +61,7 @@ img{
     background: var(--warna-sekunder2);
     border-radius: 10px;
 }
-.form{
+form{
     background: var(--warna-sekunder);
     border-radius: 10px;
 }
@@ -76,6 +76,7 @@ img{
     background: var(--warna-primer);
     border-radius: 10px;
     padding-top: 5px;
+    
 }
 .lokasi iframe{
     border-radius: 10px;
@@ -86,6 +87,6 @@ p{
 textarea{
     border-radius: 10px;
 } 
-.service,.about{
-    text-align: justify;
+.perusahaan{
+    width: 500px;
 }

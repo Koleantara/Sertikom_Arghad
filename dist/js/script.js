@@ -4,42 +4,25 @@ window.addEventListener("scroll" ,() => {
     const posisi = window.scrollY > 0;
     navbar.classList.toggle("Scrolling-active", posisi);
 });
-        const form = document.getElementById('myform');
-            // const username = document.getElementById('username');
-        const email = document.getElementById('email');
-        // const password = document.getElementById('password');
+const form = document.getElementById("myForm");
+const emailInput = document.getElementById("email");
+const emailError = document.getElementById("email_error");
 
-        // const username_error = document.getElementById('username_error');
-        const email_error = document.getElementById('email_error');
-        // const password_error = document.getElementById('password_error');
-    
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            let isValid = true;
+form.addEventListener("submit", function (event){
+        event.preventDefault();
+        let isValid = true;
 
-            // Clear previous error messages
-            // username_error.textContent = '';
-            email_error.textContent = '';
-            // Validate Username
-            // if (username.value.trim().length < 3) {
-            //     username_error.textContent = 'Username must be at least 3 characters long.';
-            //     isValid = false;
-            // }
+        emailError.textContent = "";
 
-            // Validate Email
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-            if (email.value.match(emailPattern)) {
-                email_error.textContent = 'Please enter a valid email address.';
-                isValid = false;
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (emailInput.value.trim() === "") {
+          emailError.textContent = "Email tidak boleh kosong !";
+          isValid = false;
+        } else if (!emailInput.value.match(emailPattern)) {
+          emailError.textContent = "Format email tidak valid!";
+          isValid = false;
+        }
+
+        if (isValid) {
             }
-
-            // Validate Password
-            // if (password.value.length < 6) {
-            //     password_error.textContent = 'Password must be at least 6 characters long.';
-            //     isValid = false;
-            // }
-
-            // If any validation fails, prevent form submission
-            if (!isValid) {
-            }
-        });
+});
