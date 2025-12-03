@@ -30,7 +30,6 @@ img{
 .Scrolling-active{
     background-color: var(--warna-primer);
     transition: 0.75s;
-    
     color: white;
 }
 .Hero button{
@@ -92,6 +91,11 @@ textarea{
     border-radius: 10px;
 } 
 .perusahaan{
-    width: 500px;
+    width: 470px;
     height: 140px;
+    display: flex;
+}
+.perusahaan img{
+    background: var(--warna-primer);
+    border-radius: 10px;
 }
