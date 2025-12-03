@@ -18,7 +18,7 @@ form.addEventListener("submit", function (event){
         if (emailInput.value.trim() === "") {
           emailError.textContent = "Email tidak boleh kosong !";
           isValid = false;
-        } else if (!emailInput.value.match(emailPattern)) {
+        } else if (emailInput.value.match(emailPattern)) {
           emailError.textContent = "Format email tidak valid!";
           isValid = false;
         }
